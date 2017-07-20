@@ -14,7 +14,13 @@ module.exports = {
       query: {
         presets: ['react', 'es2015', 'stage-1']
       }
-    }]
+    },
+  {
+    test: /\.sass$/,
+    include: __dirname,
+    loaders: ["style", "css", "sass"]
+    },
+  ],
   },
   resolve: {
     extensions: ['', '.js', '.jsx']

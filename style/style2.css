@@ -1,0 +1,121 @@
+body {
+  background-color: #E5E2DE;
+}
+
+.header {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+}
+
+h2 {
+  margin: 8px 11px 10px;
+  letter-spacing: 0.3px;;
+}
+
+.control {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 1.1em;
+  .prev, .next {
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+.hours, .description {
+  margin: 1px 0 0 1px;
+}
+
+.table {
+  width: 781px; height: 714px;
+  overflow: hidden;
+  position: relative;
+}
+
+.events {
+    position: absolute;
+    top: 34px; left: 108px;
+    width: 749px;
+  }
+.day {
+      float: left;
+      margin-right: 1px;
+      width: 106px; height: 1716px;
+  }
+
+  .event {
+    position: absolute;
+    width: 85px;
+    border: 1px solid white;
+    font-size: 0.75em;
+    &.q1 { height: 33px; }
+    &.q2 { height: 66px; }
+    &.q3 { height: 99px; }
+    &.q4 { height: 132px; }
+    &.past {
+      background: #d6ecff;
+
+    }
+    &.present {
+      background: #fdd466;
+      .icon {
+        background-position: 0 0;
+      }
+    }
+    &.future {
+      background: #93d7fb;
+      .icon {
+        background-position: 0 13px;
+      }
+    }
+    &.empty {
+      background: none;
+      border: 0;
+    }
+
+    .icon {
+      position: absolute;
+      display: block;
+      right: 3px; bottom: 4px;
+      opacity: 0.7;
+      cursor: pointer;
+      background-image: url(../img/icons-sprite.png);
+      background-repeat: no-repeat;
+      width: 18px; height: 13px;
+      &:hover {
+        background-position: 0 -26px;
+      }
+    }
+  }
+}
+
+
+.month {
+  position: absolute;
+  bottom: 5px; right: 6px;
+  width: 28px; height: 22px;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  top: -3px; right: 6px;
+  width: 7px; height: 7px;
+  cursor: pointer;
+}
+
+table {
+  width: 781px; height: 714px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+tr {
+  height: 33px;
+}
+
+td {
+  text-align: center;
+  line-height: 33px;
+  border-top: 0;
+}
