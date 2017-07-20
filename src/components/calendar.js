@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import { days } from './dateData'
+import { days, hours } from './dateData'
 import HoursList from './hoursList';
 
 class Calendar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { hours: days }
+    this.state = { days: days, hours: hours }
   }
 
   render() {
   return (
-    <HoursList hours={this.state.hours} />
+    <HoursList hours={this.state.hours} days={this.state.days} />
 
   )
 
