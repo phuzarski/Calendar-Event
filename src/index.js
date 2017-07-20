@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/app';
+import Calendar from './components/calendar'
 
+class App extends Component {
 
-ReactDOM.render(
-    <App />
-  , document.querySelector('.container'));
+  render() {
+    return (
+        <Calendar />
+    )
+  }
+}
+ReactDOM.render(<App />, document.querySelector('.container'));
