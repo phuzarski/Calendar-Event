@@ -581,8 +581,8 @@ const hours = [
   },
   {
     hour_number: 6,
-    start_time: '11:00',
-    end_time: '12:00',
+    start_time: '14:00',
+    end_time: '14:00',
     days: [
       {
         dayId: 36,
@@ -611,8 +611,8 @@ const hours = [
   },
   {
     hour_number: 7,
-    start_time: '12:00',
-    end_time: '13:00',
+    start_time: '14:00',
+    end_time: '15:00',
     days: [
       {
         dayId: 43,
@@ -641,8 +641,8 @@ const hours = [
   },
   {
     hour_number: 8,
-    start_time: '13:00',
-    end_time: '14:00',
+    start_time: '15:00',
+    end_time: '16:00',
     days: [
       {
         dayId: 50,
@@ -671,8 +671,8 @@ const hours = [
   },
   {
     hour_number: 9,
-    start_time: '14:00',
-    end_time: '15:00',
+    start_time: '16:00',
+    end_time: '17:00',
     days: [
       {
         dayId: 57,
@@ -701,8 +701,8 @@ const hours = [
   },
   {
     hour_number: 10,
-    start_time: '15:00',
-    end_time: '16:00',
+    start_time: '17:00',
+    end_time: '18:00',
     days: [
       {
         dayId: 64,
@@ -731,8 +731,8 @@ const hours = [
   },
   {
     hour_number: 11,
-    start_time: '16:00',
-    end_time: '17:00',
+    start_time: '18:00',
+    end_time: '19:00',
     days: [
       {
         dayId: 71,
@@ -761,8 +761,8 @@ const hours = [
   },
   {
     hour_number: 12,
-    start_time: '17:00',
-    end_time: '18:00',
+    start_time: '19:00',
+    end_time: '20:00',
     days: [
       {
         dayId: 78,
@@ -785,66 +785,6 @@ const hours = [
         dayName: 'Sa 11.07.'
       },{
         dayId: 84,
-        dayName: 'So 12.07.'
-      }
-    ]
-  },
-  {
-    hour_number: 13,
-    start_time: '18:00',
-    end_time: '19:00',
-    days: [
-      {
-        dayId: 85,
-        dayName: 'Mo 06.07.'
-      },
-      {
-        dayId: 86,
-        dayName: 'Di 07.07.'
-      },{
-        dayId: 87,
-        dayName: 'Mi 08.07.'
-      },{
-        dayId: 88,
-        dayName: 'Do 09.07.'
-      },{
-        dayId: 89,
-        dayName: 'Fr 10.07.'
-      },{
-        dayId: 90,
-        dayName: 'Sa 11.07.'
-      },{
-        dayId: 91,
-        dayName: 'So 12.07.'
-      }
-    ]
-  },
-  {
-    hour_number: 14,
-    start_time: '19:00',
-    end_time: '20:00',
-    days: [
-      {
-        dayId: 92,
-        dayName: 'Mo 06.07.'
-      },
-      {
-        dayId: 93,
-        dayName: 'Di 07.07.'
-      },{
-        dayId: 94,
-        dayName: 'Mi 08.07.'
-      },{
-        dayId: 95,
-        dayName: 'Do 09.07.'
-      },{
-        dayId: 96,
-        dayName: 'Fr 10.07.'
-      },{
-        dayId: 97,
-        dayName: 'Sa 11.07.'
-      },{
-        dayId: 98,
         dayName: 'So 12.07.'
       }
     ]
