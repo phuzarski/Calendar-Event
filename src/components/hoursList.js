@@ -1,5 +1,5 @@
 import React from 'react';
-
+import styles from './calendar.style'
 
 const HoursList = ({ hours, days, selectedHour }) => {
   console.log('hours', hours)
@@ -18,13 +18,22 @@ const HoursList = ({ hours, days, selectedHour }) => {
     return (
       every.map(x => {
         return (
-        <td onClick={() => console.log(x.dayId)}>
+        <td
+          onClick={() => console.log(x.dayId)}
+          draggable={true}
+          style={{ backgroundColor: '#f7f7f7' }}
+          >
           {x.dayId}
         </td>
         )
       })
     )
   })
+
+  function handleDragStart(event) {
+    console.log(event)
+
+  }
   console.log('selectedHour', selectedHour)
   console.log('aa', aa)
   const daysName = days.map((day) => {

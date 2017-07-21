@@ -130,6 +130,16 @@ td {
   border-top: 0;
   min-width: 107px;
 }
+
+td:hover {
+  background-color: #eee;
+}
+
 .hours {
-  background-color: #000;
+  margin: 1px 0 0 1px;
+}
+
+.description {
+  margin: 1px 0 0 1px;
+  
 }
