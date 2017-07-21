@@ -1,10 +1,10 @@
 import React from 'react';
-import HourListItem from './hour_list_item';
 
 
-const HoursList = ({ hours, days }) => {
+const HoursList = ({ hours, days, selectedHour }) => {
   console.log('hours', hours)
   console.log('days', days)
+  console.log('selectedHour', selectedHour)
 
   // const hoursItems = hours.map((hour) => {
   //   return <HourListItem key={hour.hour_number} hour={hours} />
@@ -18,16 +18,18 @@ const HoursList = ({ hours, days }) => {
     return (
       every.map(x => {
         return (
-        <td>{x.dayId}</td>
+        <td onClick={() => console.log(x.dayId)}>
+          {x.dayId}
+        </td>
         )
       })
     )
   })
+  console.log('selectedHour', selectedHour)
   console.log('aa', aa)
   const daysName = days.map((day) => {
     return <th>{day.day_name}</th>
   });
-  // console.log(daysName)
 
   return (
     <table>
@@ -39,7 +41,7 @@ const HoursList = ({ hours, days }) => {
       </thead>
       <tbody>
           <tr>
-            <td>8:00 - 9:00</td>
+            <td className="hours">8:00 - 9:00</td>
             {aa[0]}
           </tr>
           <tr>

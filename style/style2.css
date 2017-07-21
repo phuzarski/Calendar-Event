@@ -7,6 +7,16 @@ body {
   border-bottom: 1px solid #ebebeb;
 }
 
+.terminplaner {
+	position: relative;
+	top: 92px; left: 340px;
+	width: 781px; height: 786px;
+	background: white;
+	font-family: 'unit-light';
+	box-shadow: 0 1px 1px 0 rgba(black, 0.4);
+	overflow: hidden;
+  box-sizing: border-box;
+}
 h2 {
   margin: 8px 11px 10px;
   letter-spacing: 0.3px;;
@@ -118,4 +128,8 @@ td {
   text-align: center;
   line-height: 33px;
   border-top: 0;
+  min-width: 107px;
+}
+.hours {
+  background-color: #000;
 }

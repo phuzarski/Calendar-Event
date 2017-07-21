@@ -6,12 +6,16 @@ class Calendar extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { days: days, hours: hours }
+    this.state = { days: days, hours: hours, selectedHour: hours[0].days[0] }
   }
 
   render() {
   return (
-    <HoursList hours={this.state.hours} days={this.state.days} />
+    <HoursList
+      hours={this.state.hours}
+      days={this.state.days}
+      selectedHour={this.state.selectedHour}
+      onHourChange={selectedHour => this.setState({ selectedHour })}/>
 
   )
 
