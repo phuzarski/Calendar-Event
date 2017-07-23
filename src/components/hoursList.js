@@ -1,6 +1,16 @@
 import React from 'react';
 import styles from './calendar.style'
 
+
+
+class HourList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
+}
+
+
 const HoursList = ({ hours, days, selectedHour }) => {
   console.log('hours', hours)
   console.log('days', days)
@@ -31,9 +41,19 @@ const HoursList = ({ hours, days, selectedHour }) => {
   })
 
   function handleDragStart(event) {
-    console.log(event)
+    this.dragged = event.currentTarget;
+    event.dataTransfer.effectAllowed = 'move';
+    event.dataTransfer.setData('text/html', this.dragged);
 
   }
+
+
+  function dragEnd(event) {
+    this.dragged.style.display = 'block';
+    this.dragged.parentNode.removeChild(placeholder);
+  }
+
+
   console.log('selectedHour', selectedHour)
   console.log('aa', aa)
   const daysName = days.map((day) => {
